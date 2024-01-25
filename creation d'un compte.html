@@ -1,0 +1,109 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="creation d'un compte.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>creation d'un nouveau compte </title>
+    <link rel="stylesheet" href="compte.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>Creer votre compte </h1>
+      <div class="separation"></div>
+      <div class="corps-formulaire">
+        <div class="gauche">
+          <div class="groupe">
+            <label>Votre Prénom</label>
+            <input type="text" autocomplete="off" />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="groupe">
+            <label for="nom" >nom :
+           </label>
+           <input type="text "id="nom " name="nom" required 
+           minlength="5" maxlength="20" size="10">
+       </div>
+          <div class="groupe">
+            <label>Votre adresse e-mail</label>
+            <input type="text" autocomplete="off" />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="groupe">
+            <label>Votre téléphone</label>
+            <input type="text" autocomplete="off" />
+            <i class="fas fa-mobile"></i>
+          </div>
+        </div>
+        <div class="groupe">
+            <label for="date"> date de naissance :</label>
+
+            <input type="date" id="date " name="date "
+                   
+                   min="1940-01-01" max="2015-12-31">
+            
+       </div>
+       <div class="groupe ">
+        <label for="password">Mot de passe : (8 characters minimum):</label>
+        <input type="password" id="password" name="password"
+               minlength="8" required>
+    </div>
+    <div class="groupe ">
+      <label for="confirm-password">confirmer mot de passe : (8 characters minimum):</label>
+      <input type="password" id="confirm-password" name="confirm-password"
+             minlength="8" required>
+             </div>
+        <div class="droite">
+          <div class="groupe">
+            <label>Message</label>
+            <textarea placeholder="Saisissez ici un message "></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="pied-formulaire" align="center">
+        <button>confirmer</button>
+      </div>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

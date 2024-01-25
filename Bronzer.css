@@ -1,0 +1,330 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+background-image: url("images/back.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin:0
+}
+
+
+.navMenu {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #420032;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;/* majus*/
+  font-weight: 500; 
+  width: 150px;
+  margin:0 20px;
+}
+
+.navMenu a:hover {
+  color:rgb(228, 151, 187);
+}
+
+.Categor{
+  width: 100%;
+  display: flex;
+  padding: 18px 18vw;
+  justify-content: center;
+  list-style: none;
+  border-top: 1px solid #d1d1d1;
+  font-size: 130%;
+}
+
+  .product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #d1d1d1;
+
+  }
+  
+  .product-cat{
+    padding: 0 10vw;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+  }
+  
+  .product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .product-thumb{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn{
+    opacity: 1;
+  }
+  
+  .card-btn:hover{
+    background: #efefef;
+  }
+  
+  .product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  .product-brand{
+    text-transform: uppercase;
+  }
+  
+  .product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  .price{
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  
+
+  .link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #5b0531;
+    opacity: 0.5;
+    transition: .5s;
+  }
+
+.link:hover{
+    opacity: 1;
+}
+
+
+.product-details{
+    width: 80%;
+    padding: 40px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-slider{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-image: url("https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw83e6e581/images/hi-res/SKU/SKU_3250/615603_swatch.jpg?sw=585&sh=585&sm=fit");
+    background-size: cover;
+    border-top-left-radius: 50px 50px;
+}
+.image-slider1{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-image: url("https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwf38a9ab9/images/hi-res/SKU/SKU_1193/499908_swatch.jpg?sw=585&sh=585&sm=fit");
+  background-size: cover;
+  border-top-left-radius: 50px 50px;
+}
+
+.details{
+    width: 60%;
+  padding-left: 80PX;
+}
+
+.details .product-brand{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.details .product-short-des{
+    font-size: 25px;
+    line-height: 30px;
+    height: auto;
+    margin: 15px 0 30px;
+}
+
+.product-price{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.product-actual-price{
+    font-size: 30px;
+    opacity: 0.5;
+    text-decoration: line-through;
+    margin: 0 20px;
+    font-weight: 300;
+}
+
+.product-discount{
+    color: #ff7d7d;
+    font-size: 20px;
+}
+
+.product-sub-heading{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 30px 0 16px;
+    font-weight: 300;
+}
+
+.size-radio-btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #c2a6a6;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 0;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #740a0a;
+    cursor: pointer;
+}
+
+.size-radio-btn.check{
+    background: #cda36f;
+    color: #fff;
+}
+.size-radio-btn.check1{
+  background: #ea96af;
+  color: #fff;
+}
+.btn{
+    width: 48%;
+    padding: 20px;
+    border-radius: 25px;
+    background: none;
+    border: 1px solid #a58894;
+    color: #740a0a;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.cart-btn{
+    margin-right: 2%;
+    background: #a58894;
+    color: #fff;
+}
+
+  
+
+/*footer*/
+
+.footer-pg{
+  background-color: #eea6ac;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 40px;
+    overflow: hidden;
+  }
+  
+  .info{
+    color: rgb(246, 246, 246);
+    margin: 20px 0;
+    text-transform: capitalize;
+  }
+  
+  .footer-pg .footer-left{
+    float: left; /* contact al ymin*/
+  }
+  
+  .footer-pg .footer-company-name{
+    color:  #8f9296;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  
+  #social {
+    
+    display: inline-block;
+  margin-right: 200px;
+  }
+  
+  
+
+  
